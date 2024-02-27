@@ -1,28 +1,3 @@
-<?php
-error_reporting(0);
-
-	if($_POST['submit'] != ""){
-		$plot = $_POST['plot'];
-		$titlefilm = $_POST['titlefilm'];
-		$orititle = $_POST['orititle'];
-		$genre = $_POST['genre'];
-		$director = $_POST['director'];
-		$writer = $_POST['writer'];
-		$actors = $_POST['actors'];
-		$network = $_POST['network'];
-		$eps = $_POST['idmuvi-core-numberepisode-value'];
-		$release = $_POST['idmuvi-core-released-value'];
-		$lastrelease = $_POST['idmuvi-core-last-air-value'];
-		$runtime = $_POST['idmuvi-core-runtime-value'];
-		$rating = $_POST['idmuvi-core-tmdbrating-value'];
-		$votes = $_POST['idmuvi-core-tmdbvotes-value'];
-		$languange = $_POST['languange'];
-		$country = $_POST['country'];
-		$youtube = $_POST['idmuvi-core-trailer-value'];
-		$poster = $_POST['idmuvi-core-poster-value'];
-
-	}
-?>
 <html>
 <head>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -425,27 +400,7 @@ error_reporting(0);
 			</div>
 		</div>
 		<div id="col-container" style="width:50%; float:left;">
-		<?php
-if(!empty($plot)){
-echo 'Plot: '.$plot;
-echo '<br>Original Title: '.$orititle;
-echo '<br>Title: '.$titlefilm;
-echo '<br>Genre: '.$genre;
-echo '<br>Writer: '.$writer;
-echo '<br>Director: '.$director;
-echo '<br>Actors: '.$actors;
-echo '<br>Runtime: '.$runtime;
-echo '<br>Number Eps: '.$eps;
-echo '<br>Country: '.$country;
-echo '<br>Language: '.$languange;
-echo '<br>Release Date: '.$release.' - '.$lastrelease;
-echo '<br>Networks: '.$network;
-echo '<br>TmdbRating: '.$rating.'/'.$votes;
-echo '<br>Trailer: '.$youtube;
-echo '<img src="'.$poster.'" width="180px" class="img-responsive" style="display:inherit !important;">';
-echo 'script by <a href="https://serialdrakor.xyz"><SerialDrakor class="github io">SerialDrakor</SerialDrakor></a>'
-}
-		?>
+
 		</div>
 </body>
 </html>
