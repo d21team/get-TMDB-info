@@ -257,6 +257,7 @@
 										// Insert image using ajax
 
 											$("input[name=idmuvi-core-poster-value]").val(valImg);
+											$("#pic1").attr("src",valImg);
 										
 									}
 
@@ -298,110 +299,122 @@
 									<input class="button button-primary display-block" type="button" name="idmuvi-ret-gmr-button" id="idmuvi-core-id-submit" value="Retrieve Information" />
 									
 								</p>
-<form action="" method="POST">
+<form id="frm1" action="">
 					<p>
 						<label for="opsi-title"><strong>Plot:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-title" name="plot" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-title" alt="Plot: " name="plot" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-title"><strong>Drama Title:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-title" name="titlefilm" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-title" alt="Drama Title: " name="titlefilm" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-title"><strong>Original Name:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-title" name="orititle" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-title" alt="Original Name: " name="orititle" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-title"><strong>Genres:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-title" name="genre" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-title" alt="Genres: " name="genre" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-title"><strong>Director:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-title" name="director" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-title" alt="Director: " name="director" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-title"><strong>Writter:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-title" name="writer" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-title" alt="Writter: " name="writer" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-title"><strong>Actors:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-title" name="actors" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-title" alt="Tanggal Rilis: " name="actors" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-title"><strong>Networks:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-title" name="network" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-title" alt="Network: " name="network" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-episode"><strong>Number Of Episode:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-episode" name="idmuvi-core-numberepisode-value" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-episode" alt="Episode: " name="idmuvi-core-numberepisode-value" value="" />
 
 					</p>					
 					<p>
 						<label for="opsi-release"><strong>Relase Date:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-release" name="idmuvi-core-released-value" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-release" alt="Relase Date: " name="idmuvi-core-released-value" value="" />
 
 					</p>
 
 
 					<p>
 						<label for="opsi-air"><strong>Last Air Date (TMDB):</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-air" name="idmuvi-core-last-air-value" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-air" alt="Last Air Date: " name="idmuvi-core-last-air-value" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-runtime"><strong>Runtime in minutes (TMDB):</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-runtime" name="idmuvi-core-runtime-value" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-runtime" alt="Runtime in minutes: " name="idmuvi-core-runtime-value" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-rating"><strong>TMDB Rating:</strong></label>
-						<input type="text" style="max-width:80px" class="regular-text" id="opsi-rating" name="idmuvi-core-tmdbrating-value" value="" /> /
-						<input type="text" style="max-width:120px" class="regular-text" id="opsi-votes" name="idmuvi-core-tmdbvotes-value" value="" />
+						<input type="text" style="max-width:80px" class="regular-text" id="opsi-rating" alt="TmdbRating: " name="idmuvi-core-tmdbrating-value" value="" /> /
+						<input type="text" style="max-width:120px" class="regular-text" id="opsi-votes" alt="Vote: " name="idmuvi-core-tmdbvotes-value" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-year"><strong>Languange:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-year" name="languange" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-year" alt="Languange: " name="languange" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-year"><strong>Country:</strong></label>
-						<input type="text" class="regular-text display-block" id="opsi-year" name="country" value="" />
+						<input type="text" class="regular-text display-block" id="opsi-year" alt="Country: " name="country" value="" />
 
 					</p>
 					<p>
 						<label for="opsi-trailer"><strong>Youtube ID For Trailer (TMDB):</strong></label>
-						<input type="text" class="regular-text display-block" name="idmuvi-core-trailer-value" id="opsi-trailer" value="" />
+						<input type="text" class="regular-text display-block" alt="Youtube ID For Trailer: " name="idmuvi-core-trailer-value" id="opsi-trailer" value="" />
 
 					</p>
 
 					<p>
 						<label for="opsi-imageposter"><strong>Poster Url (TMDB):</strong></label>
-						<input type="text" class="regular-text display-block muvipro-metaposer-url" name="idmuvi-core-poster-value" id="opsi-imageposter" value="" />
+						<input type="text" class="regular-text display-block muvipro-metaposer-url" alt="Poster Link: " name="idmuvi-core-poster-value" id="opsi-imageposter" value="" />
 
 
 					</p>
 
 					<p>
 						<label for="opsi-tmdbid"><strong>tmdbID:</strong></label>
-						<input type="text" style="max-width:120px" class="regular-text display-block" id="opsi-tmdbid" name="idmuvi-core-tmdbid-value" value="" />
+						<input type="text" style="max-width:120px" class="regular-text display-block" id="opsi-tmdbid" alt="TMDB ID: " name="idmuvi-core-tmdbid-value" value="" />
 
 					</p>
-					<input type="submit" value="GET" name="submit" />
 					</form>
 				</div>
 			</div>
 		</div>
 		<div id="col-container" style="width:50%; float:left;">
-
+<p id="result"></p><br>
+<center><img id="pic1" name="idmuvi-core-poster-value2" id="opsi-imageposter" src="/get-TMDB-info/movie-1.png" width="200px" class="img-responsive" style="display:inherit !important;">
+<br><button onclick="myFunction()">Get Result</button></center>
+<script>
+function myFunction() {
+  var x = document.getElementById("frm1");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].alt + " " +x.elements[i].value + "<br>";
+  }
+  document.getElementById("result").innerHTML = text;
+}
+</script>
 		</div>
 </body>
 </html>
